@@ -1,0 +1,16 @@
+﻿@using WebApiCar.ViewsModels;
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @foreach (var item in Model.Cars)
+    {
+        <p>@item.NameCar</p>
+        <p>@item.Color</p>
+        <p>@item.Manufacturer</p>
+        <p>@item.DateCreate</p>
+        <p>@item.Engine</p>
+    }
+</div>
